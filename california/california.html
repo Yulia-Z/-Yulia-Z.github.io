@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./california.css">
+    <title>California</title>
+</head>
+<body>
+    <!-- <header></header> -->
+    <nav>
+        <a id="map" href="../index.html">Map</a>
+        <a id="our-team" href="../our-team/our-team.html">Our Team</a>
+        <a id="btnRus" class="btn" href="./rusCalifornia.html">Russian</a>
+    </nav>
+    <main>
+        <article id="welcome">
+            <h6><a href="../our-team/our-team.html">by Yulia Z.</a></h6>
+            <h1>Welcome to California</h1>
+            <div class="animation-block">
+                <div id="animation" onclick="myMove()">
+                    <img src="./images/sun.png" alt="Sun">
+                    <!-- <h1 id="animation" onclick="myMove()"></h1> -->
+                </div>
+            </div>
+        </article>
+        <article id="flag" class="lemon">
+            <div class="frame">
+                <span class="helper"></span><img src="./images/flag.png" alt="California Flag" title="California Flag">
+            </div>
+            <div class="content">
+                <h2>California Flag</h2>
+                <p class="padding-20">Do you know the bear has a name?<br> Try to guess it!</p>
+                <input type="radio" name="bear" id="teddy" value="Teddy" onclick="submitBtnActivation()">
+                <label for="teddy">Teddy</label>
+                <input type="radio" name="bear" id="monarch" value="Monarch" onclick="submitBtnActivation()">
+                <label for="monarch">Monarch</label>
+                <input type="radio" name="bear" id="pooh" value="Pooh" onclick="submitBtnActivation()">
+                <label for="pooh">Pooh</label>
+                <div class="padding-20">
+                    <button class="btn" id="submit" disabled>submit</button>
+                </div>
+            </div>   
+        </article>
+        <article class=""></article>
+        <article id="cities" class="lemon">
+            <div class="frame">
+                <span class="helper"></span><button id="show-prev-btn">&#8920</button>    
+                <img class="slide-img" src="" id="slide-img">
+                <button id="show-next-btn">&#8921</button>
+            </div>
+            <div class="content">
+                <h2>California Main Cities</h2>
+                <p>Five largest cities by population:</p>
+                <ol>
+                    <li>Los Angeles</li>
+                    <li>San Diego</li>
+                    <li>San Jose</li>
+                    <li>San Francisco</li>
+                    <li>Fresno</li>
+                </ol>
+                <p class="source">Source:<a href="https://en.wikipedia.org/wiki/List_of_largest_California_cities_by_population">wikipedia.org</a></p>
+            </div>
+        </article>
+        <article class=""></article>
+    </main>
+    <footer>
+        <span>PASV-kids-2019  &#9786;</span>       
+    </footer>
+<script type="text/javascript" src="./california.js"></script>
+</body>
+</html>
