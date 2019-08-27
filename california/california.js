@@ -53,9 +53,9 @@ function onSubmit() {
     const answer = bearNames.filter((name) => name.checked)[0];
     console.log(answer);
     if (answer.value === "Monarch") {
-        alert("Corect! You are so smart!");
+        alert("Correct! You are so smart!");
     } else {
-        alert("Are you seriously? So cute name for fierce Grizzly! Try once more!")
+        alert("Are you seriously? It is too cute name for fierce Grizzly! Try once more!")
     }
 }
 
