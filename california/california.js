@@ -60,16 +60,16 @@ function onSubmit() {
 }
 
 function myMove() {
-    const header = document.getElementById("animation");
+    const sun = document.getElementById("animation");
     let pos = -125;
-    const id = setInterval(frame, 20);
+    const move = setInterval(frame, 20);
 
     function frame() {
         if (pos === 0) {
-            clearInterval(id);
+            clearInterval(move);
         } else {
             pos ++;
-            header.style.bottom = pos + 'px';
+            sun.style.bottom = pos + 'px';
         }
     }
 }
