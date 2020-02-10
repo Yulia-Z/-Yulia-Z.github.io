@@ -8,7 +8,8 @@ function myMove() {
             clearInterval(move);
         } else {
             pos ++;
-            boat.style.bottom = pos + 'px';
+            boat.style.marginLeft = pos + 'px';
         }
     }
 }
+//make the boat
