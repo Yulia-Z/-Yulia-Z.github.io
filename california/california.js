@@ -1,15 +1,12 @@
+// Slider
 // find element
 const prevBtn = document.getElementById("show-prev-btn");
 const nextBtn = document.getElementById("show-next-btn");
 const slideImage = document.getElementById("slide-img");
-let bearNames = document.getElementsByName("bear"); // HTMLCollection: we couldn’t treat our HTMLCollection like an array!!!
-bearNames = Array.from(bearNames); //convert to array
-const submitBtn = document.getElementById("submit");
 
 // subscribe to events
 prevBtn.addEventListener("click", onPrevBtnClick);
 nextBtn.addEventListener("click", onNextBtnClick);
-submitBtn.addEventListener("click", onSubmit);
 
 // create image array
 const imageSrcs = [];
@@ -42,12 +39,17 @@ function onNextBtnClick() {
     } 
 }
 
-function submitBtnActivation() {
-    if (submitBtn.disabled) {
-        submitBtn.disabled = false;
-    }
-}
 
+// Bear name
+// find element
+let bearNames = document.getElementsByName("bear"); // HTMLCollection: we couldn’t treat our HTMLCollection like an array!!!
+bearNames = Array.from(bearNames); //convert to array
+const submitBtn = document.getElementById("submit");
+
+// subscribe to events
+submitBtn.addEventListener("click", onSubmit);
+
+// function definitions
 function onSubmit() {
     console.log(bearNames[0]);
     const answer = bearNames.filter((name) => name.checked)[0];
@@ -59,6 +61,13 @@ function onSubmit() {
     }
 }
 
+function submitBtnActivation() {
+    if (submitBtn.disabled) {
+        submitBtn.disabled = false;
+    }
+}
+
+// Sun animation
 function myMove() {
     const sun = document.getElementById("animation");
     let pos = -125;
