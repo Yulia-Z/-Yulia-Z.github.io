@@ -89,15 +89,15 @@ article img{
 
 .animation-block {
     width: 100%;
-    height: 200px;
+    height: 285px;
     position: relative;
-    overflow;
+    overflow: hidden;
 }
 
 #animation {
     width: 100%;
     position: absolute;
-    bottom: -125px;      
+         
 }
 #animation img {
     width: 285px;
