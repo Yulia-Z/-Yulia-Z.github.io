@@ -53,7 +53,7 @@ a:hover {
 
 .content {
     padding-top: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .btn {
@@ -103,4 +103,8 @@ article img{
     width: 285px;
     height: 285px;
     cursor: pointer;
+}
+
+#cities {
+    color: black;
 }
